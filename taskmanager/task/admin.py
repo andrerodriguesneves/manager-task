@@ -9,7 +9,7 @@ from .models import Task
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
     list_display = ('title', 'description', 'solution', 'responsible', 'priority', 'finalized_in' )
-    list_filter = ('responsible', 'priority')
+    list_filter = ('responsible', 'priority', 'solution')
     search_fields = ('title', 'responsible', 'priority')
 
 
