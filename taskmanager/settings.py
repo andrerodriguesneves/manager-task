@@ -41,8 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks',
     'taskmanager.core',
     'taskmanager.task',
+    'taskmanager.dashboard',
 ]
 
 MIDDLEWARE = [
@@ -120,6 +122,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+
+# código acima omitido
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
+
+LOGIN_URL = "login"
+LOGIN_REDIRECT_URL = "index"
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR.joinpath('staticfiles')
