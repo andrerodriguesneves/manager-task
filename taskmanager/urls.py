@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import taskmanager.core.views
-import taskmanager.dashboard.views
+#import taskmanager.dashboard.views
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
