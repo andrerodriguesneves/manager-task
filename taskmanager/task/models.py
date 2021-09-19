@@ -37,7 +37,7 @@ class Task(models.Model):
     created_in = models.DateTimeField(auto_now_add=True, verbose_name="Criado em")
     solution = models.TextField(max_length=12000, null=True, blank=True, verbose_name="Solução")
     finalized_in = models.DateTimeField(null=True, blank=True, verbose_name="Finalizado em")
-
+ 
     class Meta:
         verbose_name = "Tarefa"
         verbose_name_plural = "Tarefas"
